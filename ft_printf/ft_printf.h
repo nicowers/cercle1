@@ -6,7 +6,7 @@
 /*   By: ndebavel <ndebavel@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:12:42 by ndebavel          #+#    #+#             */
-/*   Updated: 2025/10/28 10:41:43 by ndebavel         ###   ########.fr       */
+/*   Updated: 2025/11/12 10:00:26 by ndebavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <stdio.h>
 
 int	ft_format(char c, va_list args);
 int	ft_printf(const char *str, ...);

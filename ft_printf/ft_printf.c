@@ -6,7 +6,7 @@
 /*   By: ndebavel <ndebavel@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 09:37:16 by ndebavel          #+#    #+#             */
-/*   Updated: 2025/10/28 10:40:57 by ndebavel         ###   ########.fr       */
+/*   Updated: 2025/11/12 10:17:01 by ndebavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,13 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(args);
 	return (count);
+}
+
+int main(void)
+{
+	unsigned int nb = 41254645;
+	char str[50] = "j adore ce nombre";
+
+	ft_printf("%s %u\n", str, nb);
+	printf("%s %u\n", str, nb);
 }

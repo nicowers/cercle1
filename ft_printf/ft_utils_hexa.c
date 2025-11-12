@@ -6,7 +6,7 @@
 /*   By: ndebavel <ndebavel@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 09:29:16 by ndebavel          #+#    #+#             */
-/*   Updated: 2025/10/28 10:44:31 by ndebavel         ###   ########.fr       */
+/*   Updated: 2025/11/12 10:29:47 by ndebavel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,17 @@ int	ft_putptr(void *ptr)
 	count += 2;
 	count += ft_putnbr_hexa_long((unsigned long)ptr, 1);
 	return (count);
+}
+
+int	main(void)
+{
+	int i;
+
+	for (i = 0; i < 16; i++)
+	{
+		ft_hexa_lower(i);
+		write(1, " ", 1);
+	}
+	write(1, "\n", 1);
+	return (0);
 }
